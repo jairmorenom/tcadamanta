@@ -212,33 +212,47 @@
 
         
         
-     <style>
-    .caja-enlace {
+<style>
+    .nav-container {
         background-color: rgba(211, 211, 211, 0.5); /* lightgray con 50% de opacidad */
-        padding: 5px 10px; /* Espacio interno dentro de la caja */
+        padding: 10px; /* Espacio interno dentro de la caja */
         border: 1px solid gray; /* Borde de la caja */
-        display: inline-block; /* Para que la caja se ajuste al contenido */
-        margin: 5px; /* Margen alrededor de la caja */
+        white-space: nowrap; /* Evita que haya saltos de línea */
+        overflow-x: auto; /* Agrega barras de desplazamiento horizontal si es necesario */
     }
 
-    .caja-enlace a {
-        color: black; /* Color del texto dentro de la caja */
+    .nav-container ul {
+        list-style-type: none; /* Quitar los puntos de la lista */
+        margin: 0;
+        padding: 0;
+    }
+
+    .nav-container li {
+        display: inline-block; /* Para que los elementos estén en línea */
+        margin-right: 5px; /* Margen entre elementos */
+    }
+
+    .nav-container a {
+        color: black; /* Color del texto */
         text-decoration: none; /* Quitar subrayado de los enlaces */
-        font-size: 5px; /* Tamaño de fuente */
+        font-size: 8px; /* Tamaño de la fuente */
+        padding: 5px 10px; /* Espacio interno del enlace */
     }
 </style>
 
-<nav>
+<div class="nav-container">
     <ul>
-        <li class="caja-enlace"><a href="#objetivo">Objetivo</a></li>
-        <li class="caja-enlace"><a href="#valores">Valores</a></li>
-        <li class="caja-enlace"><a href="#requisitos">Requisitos</a></li>
-        <li class="caja-enlace"><a href="#cronograma">Cronograma</a></li>
-        <li class="caja-enlace"><a href="#proposito">Propósito</a></li>
-        <li class="caja-enlace"><a href="#registro">Registro</a></li>
-        <li class="caja-enlace"><a href="#contacto">Contacto</a></li>
+        <li><a href="#objetivo">Objetivo</a></li>
+        <li><a href="#valores">Valores</a></li>
+        <li><a href="#requisitos">Requisitos</a></li>
+        <li><a href="#cronograma">Cronograma</a></li>
+        <li><a href="#proposito">Propósito</a></li>
+        <li><a href="#registro">Registro</a></li>
+        <li><a href="#contacto">Contacto</a></li>
     </ul>
 </nav>
+    </div>
+
 
 
 
