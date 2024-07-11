@@ -1,3 +1,332 @@
-niuiunio
-
-miomop
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pico Norte Training Camp</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f6e7; /* Tono amarillo claro */
+            color: #333; /* Color de texto gris oscuro */
+            text-align: center;
+        }
+        .container {
+            width: 90%;
+            margin: auto;
+            overflow: hidden;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding-top: 30px;
+            min-height: 70px;
+            border-bottom: #77a8d8 3px solid;
+            text-align: center;
+        }
+        header a {
+            color: #fff;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 14px;
+        }
+        header ul {
+            padding: 0;
+            list-style: none;
+        }
+        header li {
+            display: inline;
+            padding: 0 10px;
+        }
+        .showcase {
+            min-height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px;
+            flex-wrap: wrap;
+            background-size: cover;
+            color: #000;
+        }
+        .showcase img {
+            max-width: 100%;
+            margin: auto;
+            display: none;
+        }
+        .showcase .content {
+            max-width: 100%;
+            margin: auto;
+        }
+        .showcase h1 {
+            font-size: 2rem;
+            margin-bottom: 10px;
+            color: #000;
+        }
+        .showcase p {
+            font-size: 1.2rem;
+            color: #000;
+        }
+        .content {
+            padding: 20px;
+            background: #f4f4f4;
+            color: #333;
+            text-align: justify;
+        }
+        .content h2, .content h3 {
+            text-align: center;
+        }
+        .content p, .content ul {
+            padding: 10px;
+            line-height: 1.6;
+        }
+        .highlight-box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            text-align: center;
+            background-color: #f4f4f4;
+            padding: 20px;
+            border-radius: 10px;
+            border: 1px solid #ccc;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+        .highlight-box p {
+            color: #333;
+            margin: 0;
+        }
+        .highlight-box ul {
+            list-style-type: none;
+            padding-left: 0;
+            text-align: left;
+            margin-top: 10px;
+        }
+        .highlight-box ul li {
+            text-align: left;
+            margin-bottom: 5px;
+        }
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
+        .custom-bullets {
+            list-style-type: none;
+            padding-left: 0;
+            text-align: center;
+        }
+        .custom-bullets li {
+            position: relative;
+            padding-left: 25px;
+            margin-bottom: 10px;
+            display: inline-block;
+        }
+        .custom-bullets li:before {
+            content: "✦";
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #333;
+        }
+        .contact-box {
+            background-color: #f4f4f4;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .contact-box ul {
+            list-style-type: none;
+            padding-left: 0;
+            margin-top: 0;
+        }
+        .contact-box ul li {
+            text-align: left;
+            margin-bottom: 10px;
+        }
+        @media (min-width: 768px) {
+            .container {
+                width: 80%;
+            }
+            .showcase {
+                flex-wrap: nowrap;
+            }
+            .showcase .content {
+                max-width: 60%;
+            }
+            header ul {
+                float: right;
+            }
+            header li {
+                padding: 0 20px;
+            }
+            .showcase h1 {
+                font-size: 3rem;
+            }
+            .showcase p {
+                font-size: 1.5rem;
+            }
+            .showcase img {
+                display: inline-block;
+            }
+            .contact-box {
+                width: 50%;
+                margin: auto;
+                text-align: left;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Pico Norte</h1>
+        <h2>High Performance Training Camp</h2>
+        <nav>
+            <ul>
+                <li><a href="#objetivo">Objetivo</a></li>
+                <li><a href="#valores">Valores</a></li>
+                <li><a href="#requisitos">Enfoque</a></li>
+                <li><a href="#cronograma">Cronograma</a></li>
+                <li><a href="#proposito">Propósito</a></li>
+                <li><a href="#registro">Registro</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="showcase">
+        <div class="content">
+            <p><strong>¡Únete al Training Camp!</strong></p>
+            <div class="highlight-box">
+                <p style="color: black;">
+                    Lugar: Pico Norte <br>
+                    Fecha: 9, 10, 11 Agosto <br>
+                    Costo: $2,000 MXN
+                </p>
+                </div>
+                <div class="highlight-box">
+                <p><a href="https://forms.gle/6fGFNq3so37cJAHK6">Regístro</a></p>
+            </div>
+        </div>
+    </section>
+    <section class="content" id="objetivo">
+        <div class="container">
+            <h2>Objetivo</h2>
+            <p>Trabajaremos para motivar a las y los atletas, llevándolos más allá de sus capacidades, tanto mentales como físicas, con el objetivo de prepararlos para sus futuras competencias y proyectos personales.</p>
+            <p>Estamos preparados para equiparte con las herramientas esenciales para competir al más alto nivel y construir las bases de un atleta de alto rendimiento.</p><br>
+            
+            <p style="color: black; font-weight: bold; text-align: center;">FORTALECERÁS TU:</p>
+            <div class="highlight-box" style="text-align: center;">
+                <ul style="list-style-type: none; padding-left: 0;">
+                    <li style="text-align: left;"><strong>✓ Movimiento</strong></li>
+                    <li style="text-align: left;"><strong>✓ Preparación mental</strong></li>
+                    <li style="text-align: left;"><strong>✓ Técnica / Táctica</strong></li>
+                    <li style="text-align: left;"><strong>✓ Lectura / Visualización</strong></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section class="content" id="valores">
+        <div class="container">
+            <h2>Valores</h2>
+            <div class="highlight-box">
+                <ul>
+                    <li>⭐ Superación Personal</li>
+                    <li>⭐ Trabajo en Equipo</li>
+                    <li>⭐ Disciplina y Perseverancia</li>
+                    <li>⭐ Desarrollo de Habilidades</li>
+                    <li>⭐ Confianza</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section class="content" id="requisitos">
+        <div class="container">
+            <h2>Requisitos</h2>
+            <div class="highlight-box">
+                <ul class="custom-bullets">
+                    <li>Activamente compitiendo.</li>
+                    <li>Interesado en competir.</li>
+                    <li>V6+</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section class="content" id="cronograma">
+        <div class="container">
+            <h2>Cronograma</h2>
+            <div style="text-align: center; margin-top: 0;">
+                <div class="highlight-box">
+                    <h3>Día 1: Viernes</h3>
+                </div>
+                <div style="padding: 10px; text-align: left;">
+                    <p><span style="font-size: 18px;">14:00-15:00</span> Recepción y acomodación de equipo</p>
+                    <p><span style="font-size: 18px;">15:30-16:00</span> Bienvenida y presentación</p>
+                    <p><span style="font-size: 18px;">16:00-19:00</span> Sesión 1: Evaluación física y de habilidades</p>
+                    <p><span style="font-size: 18px;">19:00-20:00</span> Cena y convivencia</p>
+                </div>
+                <div class="highlight-box">
+                    <h3>Día 2: Sábado</h3>
+                </div>
+                <div style="padding: 10px; text-align: left;">
+                    <p><span style="font-size: 18px;">07:00-08:00</span> Desayuno</p>
+                    <p><span style="font-size: 18px;">08:00-11:00</span> Sesión 2: Técnica y táctica en roca</p>
+                    <p><span style="font-size: 18px;">11:00-12:00</span> Descanso y alimentación</p>
+                    <p><span style="font-size: 18px;">12:00-15:00</span> Sesión 3: Estrategias de visualización y lectura de ruta</p>
+                    <p><span style="font-size: 18px;">15:00-16:00</span> Comida</p>
+                    <p><span style="font-size: 18px;">16:00-19:00</span> Sesión 4: Entrenamiento mental y físico</p>
+                    <p><span style="font-size: 18px;">19:00-20:00</span> Cena y retroalimentación</p>
+                </div>
+                <div class="highlight-box">
+                    <h3>Día 3: Domingo</h3>
+                </div>
+                <div style="padding: 10px; text-align: left;">
+                    <p><span style="font-size: 18px;">07:00-08:00</span> Desayuno</p>
+                    <p><span style="font-size: 18px;">08:00-11:00</span> Sesión 5: Práctica y evaluación final</p>
+                    <p><span style="font-size: 18px;">11:00-12:00</span> Descanso y alimentación</p>
+                    <p><span style="font-size: 18px;">12:00-14:00</span> Feedback y cierre</p>
+                    <p><span style="font-size: 18px;">14:00</span> Despedida</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="content" id="proposito">
+        <div class="container">
+            <h2>Propósito</h2>
+            <p>Enfocamos este campamento en preparar a las y los atletas con las herramientas necesarias para competir al más alto nivel. A través de nuestro entrenamiento integral, buscamos construir las bases sólidas de un atleta de alto rendimiento.</p>
+            <div class="highlight-box">
+                <p>¡Únete a nosotros y lleva tu rendimiento al siguiente nivel!</p>
+            </div>
+        </div>
+    </section>
+    <section class="content" id="registro">
+        <div class="container">
+            <h2>Registro</h2>
+            <p>Para registrarte, por favor llena el siguiente formulario:</p>
+            <p><a href="https://forms.gle/6fGFNq3so37cJAHK6">Formulario de Registro</a></p>
+        </div>
+    </section>
+    <section class="content" id="contacto">
+        <div class="container">
+            <h2>Contacto</h2>
+            <div class="contact-box">
+                <ul>
+                    <li>Correo: piconorteclimb@gmail.com</li>
+                    <li>Instagram: @piconorte_climb</li>
+                    <li>Facebook: Pico Norte Climb</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>Pico Norte &copy; 2023</p>
+    </footer>
+</body>
+</html>
