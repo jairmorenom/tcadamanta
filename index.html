@@ -130,6 +130,36 @@
             top: 50%;
             transform: translateY(-50%);
             color: #333;
+
+
+
+            header {
+  position: relative;
+  text-align: center;
+  color: white;
+  padding: 20px;
+}
+
+.header-content {
+  position: relative;
+  z-index: 1;
+}
+
+header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('ada.jpeg') no-repeat center center/cover;
+  opacity: 0.3; /* Ajusta la opacidad según sea necesario */
+  z-index: 0;
+}
+
+
+
+            
         }
         .contact-box {
             background-color: #f4f4f4;
@@ -182,11 +212,26 @@
     </style>
 </head>
 <body>
-    <header>
-        <h1>Adamanta</h1>
-        <h2>High Performance Training Camp</h2>
-        <nav>
+
+
+
+    
+    
+  <header>
+  <div class="header-content">
+    <h1>Adamanta</h1>
+    <h2>High Performance Training Camp</h2>
+    <nav>
+      <!-- Aquí puedes agregar enlaces de navegación si es necesario -->
+    </nav>
+  </div>
+</header>
+
+
+    
+
             <ul>
+                <div class="highlight-box">
                 <li><a href="#objetivo"style="font-size: 12px;">Objetivo</a></li>
                 <li><a href="#valores"style="font-size: 12px;">Valores</a></li>
                 <li><a href="#requisitos"style="font-size: 12px;">Requisitos</a></li>
@@ -194,6 +239,7 @@
                 <li><a href="#proposito"style="font-size: 12px;">Propósito</a></li>
                 <li><a href="#registro"style="font-size: 12px;">Registro</a></li>
                 <li><a href="#contacto"style="font-size: 12px;">Contacto</a></li>
+                </div>
             </ul>
         </nav>
     </header>
@@ -203,8 +249,8 @@
             <div class="highlight-box">
                 <p style="color: black;">
                     Lugar: Adamanta <br>
-                    Fecha: Julio 26, 27, 28 <br>
-                    Costo: $2,500
+                    Fecha: 26, 27, 28 Julio <br>
+                    Costo: $2,500 mxn
                 </p>
                 </div>
                 <div class="highlight-box">
@@ -251,10 +297,10 @@ Trabajaremos para motivar a las y los atletas, llevándolos más allá de sus ca
             <h2>Requisitos</h2>
             <div class="highlight-box">
                 <ul class="custom-bullets">
+                    <li>Atletas de 12 a 18 años de edad.</li><br> 
                     <li>Activamente compitiendo.</li><br>
-                    <li>Interesado en competir.</li><br>
-                    <li>V6+</li><br>
-                    <li>+12 años.</li><br>               
+                    <li>Interesado en competir.</li><br>  
+                    <li>V6+</li><br>                      
                     <li><strong>Nota:</strong> <a href="https://docs.google.com/spreadsheets/d/121tmjgRgRckks1PX-ijIA7wgDJQ6K93vA_pI4mbBSNM/edit?gid=0#gid=0" style="font-size: 15px;">Competencias</a></li>
                 </ul>
             </div>
